@@ -1,0 +1,24 @@
+2023-06-26 12:44:55,874 - root - INFO - KGAT(
+  (entity_user_embed): Embedding(184166, 64)
+  (relation_embed): Embedding(80, 64)
+  (aggregator_layers): ModuleList(
+    (0): Aggregator(
+      (message_dropout): Dropout(p=0.1, inplace=False)
+      (activation): LeakyReLU(negative_slope=0.01)
+      (linear1): Linear(in_features=64, out_features=64, bias=True)
+      (linear2): Linear(in_features=64, out_features=64, bias=True)
+    )
+    (1): Aggregator(
+      (message_dropout): Dropout(p=0.1, inplace=False)
+      (activation): LeakyReLU(negative_slope=0.01)
+      (linear1): Linear(in_features=64, out_features=32, bias=True)
+      (linear2): Linear(in_features=64, out_features=32, bias=True)
+    )
+    (2): Aggregator(
+      (message_dropout): Dropout(p=0.1, inplace=False)
+      (activation): LeakyReLU(negative_slope=0.01)
+      (linear1): Linear(in_features=32, out_features=16, bias=True)
+      (linear2): Linear(in_features=32, out_features=16, bias=True)
+    )
+  )
+)
